@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:gap/gap.dart';
-import 'package:raspberry/presentetions/constans/style.dart';
+import 'package:raspberry/presentetions/constans/logol_style.dart';
 
 class EnterPage extends StatelessWidget {
   const EnterPage({super.key});

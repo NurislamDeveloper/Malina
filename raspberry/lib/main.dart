@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         /*
     '/firstScreen': (context) => FirstScreen(),  here how it work with push.Named
     '/secondScreen': (context) => SecondScreen(),
-        */
+        */                                                                                
       },
     );
   }
