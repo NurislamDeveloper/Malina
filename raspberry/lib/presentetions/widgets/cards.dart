@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:raspberry/presentetions/constans/cards_style.dart';
 
 class FirstCard extends StatelessWidget {
-  const FirstCard({
+  const FirstCard(
+        this.color,
+    {
     super.key,
     required this.image,
     required this.firstText,
@@ -11,6 +13,7 @@ class FirstCard extends StatelessWidget {
   final String image;
   final String firstText;
   final String secondText;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +21,7 @@ class FirstCard extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: 180,
       child: Card(
+        color: color,
         child: Column(
           children: [
             Stack(
@@ -29,7 +33,10 @@ class FirstCard extends StatelessWidget {
                     bottomLeft: Radius.circular(10),
                     bottomRight: Radius.circular(10),
                   ),
-                  child: Image.asset(image),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 50,top: 11),
+                    child: Image.asset(image),
+                  ),
                 ),
                 Positioned(
                   top: 10,
